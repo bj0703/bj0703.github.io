@@ -3,10 +3,344 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
+    <title>我的 GitHub 主页</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --panel: #161b22;
+            --border: #30363d;
+            --text: #c9d1d9;
+            --muted: #8b949e;
+            --title: #f0f6fc;
+            --accent: #2f81f7;
+            --accent-soft: rgba(47, 129, 247, 0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .topbar {
+            border-bottom: 1px solid var(--border);
+            background: rgba(13, 17, 23, 0.95);
+        }
+
+        .topbar-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .brand {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--title);
+        }
+
+        .nav {
+            display: flex;
+            gap: 18px;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 32px 20px 48px;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 24px;
+        }
+
+        .card {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        .sidebar {
+            padding: 24px;
+            height: fit-content;
+            position: sticky;
+            top: 24px;
+        }
+
+        .avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--title);
+            background: linear-gradient(135deg, #238636, #2f81f7);
+            margin-bottom: 18px;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            color: var(--title);
+        }
+
+        .name {
+            font-size: 1.6rem;
+        }
+
+        .username {
+            margin-top: 6px;
+            color: var(--muted);
+        }
+
+        .bio {
+            margin: 18px 0;
+            line-height: 1.7;
+            color: var(--text);
+        }
+
+        .button {
+            display: inline-block;
+            width: 100%;
+            padding: 10px 14px;
+            border-radius: 8px;
+            text-align: center;
+            background: var(--accent);
+            color: white;
+            font-weight: 600;
+        }
+
+        .meta {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            line-height: 1.9;
+            font-size: 0.95rem;
+        }
+
+        .content {
+            display: grid;
+            gap: 24px;
+        }
+
+        .hero {
+            padding: 28px;
+        }
+
+        .hero p {
+            margin: 12px 0 0;
+            color: var(--muted);
+            line-height: 1.8;
+            max-width: 700px;
+        }
+
+        .section {
+            padding: 24px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 18px;
+        }
+
+        .badge {
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: var(--accent-soft);
+            color: #79c0ff;
+            font-size: 0.85rem;
+        }
+
+        .repo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .repo {
+            padding: 18px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: #0d1117;
+        }
+
+        .repo h3 {
+            font-size: 1rem;
+        }
+
+        .repo p {
+            margin: 10px 0 14px;
+            color: var(--muted);
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .repo-footer {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .video-box {
+            overflow: hidden;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background: #000;
+        }
+
+        video {
+            display: block;
+            width: 100%;
+            max-height: 480px;
+            background: #000;
+        }
+
+        .video-tip {
+            margin-top: 12px;
+            color: var(--muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        footer {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px 40px;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 860px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .repo-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .topbar-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>你好，世界！</h1>
-    <p>欢迎来到我的第一个个人网站。这里是使用 GitHub Pages 搭建的。</p>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a class="brand" href="#">GitHub Home</a>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#video">Video</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <aside class="card sidebar" id="about">
+            <div class="avatar">ME</div>
+            <h1 class="name">你的名字</h1>
+            <div class="username">@your-github-id</div>
+            <p class="bio">
+                专注于代码、项目和创意表达。这里是我的个人主页，用简洁的方式展示我的简介、仓库和视频内容。
+            </p>
+            <a class="button" href="https://github.com/" target="_blank" rel="noreferrer">查看 GitHub</a>
+
+            <div class="meta">
+                <div>位置：中国</div>
+                <div>方向：Web / AI / Tools</div>
+                <div>邮箱：you@example.com</div>
+            </div>
+        </aside>
+
+        <section class="content">
+            <div class="card hero">
+                <h2>简洁、清楚、像 GitHub 一样直接</h2>
+                <p>
+                    这个主页采用 GitHub 风格的深色配色和卡片式布局，适合放在 GitHub Pages 上。你可以把它作为个人主页、项目展示页，或者作品集首页。
+                </p>
+            </div>
+
+            <div class="card section" id="projects">
+                <div class="section-header">
+                    <h2>精选项目</h2>
+                    <span class="badge">Pinned</span>
+                </div>
+                <div class="repo-grid">
+                    <article class="repo">
+                        <h3>emotion-space</h3>
+                        <p>一个围绕图文情感对齐构建的实验项目，用于训练连续情感空间表示。</p>
+                        <div class="repo-footer">Python · PyTorch</div>
+                    </article>
+
+                    <article class="repo">
+                        <h3>personal-site</h3>
+                        <p>一个部署在 GitHub Pages 上的个人主页模板，适合放简介、作品和演示视频。</p>
+                        <div class="repo-footer">HTML · CSS</div>
+                    </article>
+
+                    <article class="repo">
+                        <h3>toolbox</h3>
+                        <p>整理常用脚本、自动化工具和开发配置，方便快速复用。</p>
+                        <div class="repo-footer">JavaScript · Shell</div>
+                    </article>
+
+                    <article class="repo">
+                        <h3>notes</h3>
+                        <p>记录学习过程中的技术笔记、实验结论和项目总结。</p>
+                        <div class="repo-footer">Markdown</div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="card section" id="video">
+                <div class="section-header">
+                    <h2>视频展示</h2>
+                    <span class="badge">Featured</span>
+                </div>
+
+                <div class="video-box">
+                    <video controls poster="">
+                        <source src="demo.mp4" type="video/mp4">
+                        你的浏览器暂不支持 video 标签。
+                    </video>
+                </div>
+
+                <p class="video-tip">
+                    把你的视频文件命名为 <code>demo.mp4</code>，放到和当前 <code>index.html</code> 同一个目录下，就可以直接播放。
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        © 2026 你的名字 · Built for GitHub Pages
+    </footer>
 </body>
 </html>
