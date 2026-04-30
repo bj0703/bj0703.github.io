@@ -4,250 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bj的 GitHub 主页</title>
-    <style>
-        :root {
-            --bg: #0d1117;
-            --panel: #161b22;
-            --border: #30363d;
-            --text: #c9d1d9;
-            --muted: #8b949e;
-            --title: #f0f6fc;
-            --accent: #2f81f7;
-            --accent-soft: rgba(47, 129, 247, 0.15);
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .topbar {
-            border-bottom: 1px solid var(--border);
-            background: rgba(13, 17, 23, 0.95);
-        }
-
-        .topbar-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 16px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 16px;
-        }
-
-        .brand {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--title);
-        }
-
-        .nav {
-            display: flex;
-            gap: 18px;
-            color: var(--muted);
-            font-size: 0.95rem;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 32px 20px 48px;
-            display: grid;
-            grid-template-columns: 280px 1fr;
-            gap: 24px;
-        }
-
-        .card {
-            background: var(--panel);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-        }
-
-        .sidebar {
-            padding: 24px;
-            height: fit-content;
-            position: sticky;
-            top: 24px;
-        }
-
-        .avatar {
-            width: 96px;
-            height: 96px;
-            border-radius: 50%;
-            display: grid;
-            place-items: center;
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--title);
-            background: linear-gradient(135deg, #238636, #2f81f7);
-            margin-bottom: 18px;
-        }
-
-        h1, h2, h3 {
-            margin: 0;
-            color: var(--title);
-        }
-
-        .name {
-            font-size: 1.6rem;
-        }
-
-        .username {
-            margin-top: 6px;
-            color: var(--muted);
-        }
-
-        .bio {
-            margin: 18px 0;
-            line-height: 1.7;
-            color: var(--text);
-        }
-
-        .button {
-            display: inline-block;
-            width: 100%;
-            padding: 10px 14px;
-            border-radius: 8px;
-            text-align: center;
-            background: var(--accent);
-            color: white;
-            font-weight: 600;
-        }
-
-        .meta {
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border);
-            color: var(--muted);
-            line-height: 1.9;
-            font-size: 0.95rem;
-        }
-
-        .content {
-            display: grid;
-            gap: 24px;
-        }
-
-        .hero {
-            padding: 28px;
-        }
-
-        .hero p {
-            margin: 12px 0 0;
-            color: var(--muted);
-            line-height: 1.8;
-            max-width: 700px;
-        }
-
-        .section {
-            padding: 24px;
-        }
-
-        .section-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 12px;
-            margin-bottom: 18px;
-        }
-
-        .badge {
-            padding: 6px 10px;
-            border-radius: 999px;
-            background: var(--accent-soft);
-            color: #79c0ff;
-            font-size: 0.85rem;
-        }
-
-        .repo-grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 16px;
-        }
-
-        .repo {
-            padding: 18px;
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            background: #0d1117;
-        }
-
-        .repo h3 {
-            font-size: 1rem;
-        }
-
-        .repo p {
-            margin: 10px 0 14px;
-            color: var(--muted);
-            line-height: 1.6;
-            font-size: 0.95rem;
-        }
-
-        .repo-footer {
-            color: var(--muted);
-            font-size: 0.9rem;
-        }
-
-        .video-box {
-            overflow: hidden;
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            background: #000;
-        }
-
-        video {
-            display: block;
-            width: 100%;
-            max-height: 480px;
-            background: #000;
-        }
-
-        .video-tip {
-            margin-top: 12px;
-            color: var(--muted);
-            font-size: 0.95rem;
-            line-height: 1.7;
-        }
-
-        footer {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px 40px;
-            color: var(--muted);
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 860px) {
-            .container {
-                grid-template-columns: 1fr;
-            }
-
-            .sidebar {
-                position: static;
-            }
-
-            .repo-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .topbar-inner {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="topbar">
@@ -256,7 +13,7 @@
             <nav class="nav">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
-                <a href="#video">Video</a>
+                <a href="#papers">Papers</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -294,53 +51,183 @@
                 </div>
                 <div class="repo-grid">
                     <article class="repo">
-                        <h3>emotion-space</h3>
+                        <h3><a href="https://github.com/bj0703/emotion-space" target="_blank" rel="noreferrer">emotion-space</a></h3>
                         <p>一个围绕图文情感对齐构建的实验项目，用于训练连续情感空间表示。</p>
                         <div class="repo-footer">Python · PyTorch</div>
                     </article>
 
                     <article class="repo">
-                        <h3>personal-site</h3>
+                        <h3><a href="https://github.com/bj0703/personal-site" target="_blank" rel="noreferrer">personal-site</a></h3>
                         <p>一个部署在 GitHub Pages 上的个人主页模板，适合放简介、作品和演示视频。</p>
                         <div class="repo-footer">HTML · CSS</div>
                     </article>
 
                     <article class="repo">
-                        <h3>toolbox</h3>
+                        <h3><a href="https://github.com/bj0703/toolbox" target="_blank" rel="noreferrer">toolbox</a></h3>
                         <p>整理常用脚本、自动化工具和开发配置，方便快速复用。</p>
                         <div class="repo-footer">JavaScript · Shell</div>
                     </article>
 
                     <article class="repo">
-                        <h3>notes</h3>
+                        <h3><a href="https://github.com/bj0703/notes" target="_blank" rel="noreferrer">notes</a></h3>
                         <p>记录学习过程中的技术笔记、实验结论和项目总结。</p>
                         <div class="repo-footer">Markdown</div>
                     </article>
                 </div>
             </div>
 
-            <div class="card section" id="video">
-                <div class="section-header">
-                    <h2>视频展示</h2>
-                    <span class="badge">Featured</span>
+            <div class="card papers-section" id="papers">
+                <div class="papers-header">
+                    <h2>阅读过的论文</h2>
+                    <span class="badge">Papers</span>
                 </div>
 
-                <div class="video-box">
-                    <video controls poster="">
-                        <source src="demo.mp4" type="video/mp4">
-                        你的浏览器暂不支持 video 标签。
-                    </video>
+                <div class="papers-category-tabs">
+                    <button class="papers-tab active" data-category="all">全部</button>
+                    <button class="papers-tab" data-category="llm">大语言模型</button>
+                    <button class="papers-tab" data-category="vision">计算机视觉</button>
+                    <button class="papers-tab" data-category="agent">智能体</button>
+                    <button class="papers-tab" data-category="optimization">优化方法</button>
                 </div>
 
-                <p class="video-tip">
-                    把你的视频文件命名为 <code>demo.mp4</code>，放到和当前 <code>index.html</code> 同一个目录下，就可以直接播放。
-                </p>
+                <div class="papers-list">
+                    <article class="paper-card" data-category="llm">
+                        <h3 class="paper-title"><a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noreferrer">Attention Is All You Need</a></h3>
+                        <div class="paper-meta">
+                            <span>Authors: Vaswani et al.</span>
+                            <span>Year: 2017</span>
+                            <span>Venue: NeurIPS</span>
+                        </div>
+                        <p class="paper-summary">
+                            提出了Transformer架构，完全基于自注意力机制，摒弃了传统的RNN和CNN。这篇论文开创了NLP领域的新纪元，
+                            BERT、GPT等后续模型都基于此架构。核心创新点包括多头注意力、位置编码和残差连接。
+                        </p>
+                        <div class="paper-tags">
+                            <span class="paper-tag">Transformer</span>
+                            <span class="paper-tag">Self-Attention</span>
+                            <span class="paper-tag">NLP</span>
+                        </div>
+                    </article>
+
+                    <article class="paper-card" data-category="vision">
+                        <h3 class="paper-title"><a href="https://arxiv.org/abs/2010.11929" target="_blank" rel="noreferrer">Vision Transformer (ViT)</a></h3>
+                        <div class="paper-meta">
+                            <span>Authors: Dosovitskiy et al.</span>
+                            <span>Year: 2020</span>
+                            <span>Venue: ICML</span>
+                        </div>
+                        <p class="paper-summary">
+                            将Transformer直接应用于图像分类任务，通过将图像分割成固定大小的patch序列输入Transformer。
+                            证明了在大规模数据集上预训练后，ViT可以达到甚至超过传统CNN的性能，开启了视觉Transformer时代。
+                        </p>
+                        <div class="paper-tags">
+                            <span class="paper-tag">Vision Transformer</span>
+                            <span class="paper-tag">Image Classification</span>
+                            <span class="paper-tag">CV</span>
+                        </div>
+                    </article>
+
+                    <article class="paper-card" data-category="agent">
+                        <h3 class="paper-title"><a href="https://github.com/Significant-Gravitas/AutoGPT" target="_blank" rel="noreferrer">AutoGPT</a></h3>
+                        <div class="paper-meta">
+                            <span>Authors: Significant Gravitas</span>
+                            <span>Year: 2023</span>
+                            <span>Venue: arXiv</span>
+                        </div>
+                        <p class="paper-summary">
+                            提出了一种基于GPT-4的自主智能体框架，能够自动分解任务、生成计划、执行操作并反思结果。
+                            AutoGPT展示了LLM在无需人工干预的情况下完成复杂任务的能力，推动了AI Agent研究的发展。
+                        </p>
+                        <div class="paper-tags">
+                            <span class="paper-tag">AI Agent</span>
+                            <span class="paper-tag">Autonomous</span>
+                            <span class="paper-tag">GPT-4</span>
+                        </div>
+                    </article>
+
+                    <article class="paper-card" data-category="optimization">
+                        <h3 class="paper-title"><a href="https://arxiv.org/abs/1412.6980" target="_blank" rel="noreferrer">Adam: A Method for Stochastic Optimization</a></h3>
+                        <div class="paper-meta">
+                            <span>Authors: Kingma & Ba</span>
+                            <span>Year: 2015</span>
+                            <span>Venue: ICLR</span>
+                        </div>
+                        <p class="paper-summary">
+                            提出了Adam优化器，结合了AdaGrad和RMSProp的优点，使用自适应学习率。Adam已成为深度学习中最常用的
+                            优化算法之一，收敛速度快且对超参数不敏感，广泛应用于各种深度学习模型的训练。
+                        </p>
+                        <div class="paper-tags">
+                            <span class="paper-tag">Optimization</span>
+                            <span class="paper-tag">Deep Learning</span>
+                            <span class="paper-tag">Training</span>
+                        </div>
+                    </article>
+
+                    <article class="paper-card" data-category="llm">
+                        <h3 class="paper-title"><a href="https://arxiv.org/abs/1810.04805" target="_blank" rel="noreferrer">BERT: Pre-training of Deep Bidirectional Transformers</a></h3>
+                        <div class="paper-meta">
+                            <span>Authors: Devlin et al.</span>
+                            <span>Year: 2018</span>
+                            <span>Venue: NAACL</span>
+                        </div>
+                        <p class="paper-summary">
+                            提出了BERT模型，采用双向Transformer编码器和Masked Language Modeling预训练任务。BERT在11个NLP任务
+                            上取得了state-of-the-art性能，证明了预训练语言模型的强大能力，推动了NLP领域的预训练范式革命。
+                        </p>
+                        <div class="paper-tags">
+                            <span class="paper-tag">BERT</span>
+                            <span class="paper-tag">Pre-training</span>
+                            <span class="paper-tag">NLP</span>
+                        </div>
+                    </article>
+
+                    <article class="paper-card" data-category="vision">
+                        <h3 class="paper-title"><a href="https://arxiv.org/abs/2112.10752" target="_blank" rel="noreferrer">Stable Diffusion</a></h3>
+                        <div class="paper-meta">
+                            <span>Authors: Rombach et al.</span>
+                            <span>Year: 2022</span>
+                            <span>Venue: CVPR</span>
+                        </div>
+                        <p class="paper-summary">
+                            提出了一种高效的文本到图像生成模型，使用潜在扩散模型在压缩的潜在空间中进行扩散过程。
+                            Stable Diffusion相比之前的模型更高效，能够在消费级GPU上运行，极大推动了AI图像生成的普及。
+                        </p>
+                        <div class="paper-tags">
+                            <span class="paper-tag">Diffusion Model</span>
+                            <span class="paper-tag">Text-to-Image</span>
+                            <span class="paper-tag">Generative AI</span>
+                        </div>
+                    </article>
+                </div>
             </div>
-        </section>
+
+            </section>
     </main>
 
     <footer id="contact">
         © 2026 你的名字 · Built for GitHub Pages
     </footer>
+
+    <script>
+        const tabs = document.querySelectorAll('.papers-tab');
+        const papers = document.querySelectorAll('.paper-card');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const category = tab.dataset.category;
+
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                papers.forEach(paper => {
+                    if (category === 'all' || paper.dataset.category === category) {
+                        paper.classList.remove('hidden');
+                    } else {
+                        paper.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
