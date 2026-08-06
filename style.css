@@ -51,10 +51,11 @@ a:hover, a:focus-visible { color: #17648e; text-decoration: underline; }
 .site-header nav a:hover { color: var(--blue-dark); text-decoration: none; }
 
 .project-only { min-height: calc(100vh - 190px); padding: 78px 0 56px; }
+.collection-title { margin: 0 0 28px; color: var(--ink-strong); text-align: center; font-size: 28px; line-height: 1.2; font-weight: 650; letter-spacing: .02em; }
 .featured-project { display: grid; grid-template-columns: 1.25fr .75fr; overflow: hidden; border: 1px solid var(--rule); border-radius: 8px; background: rgba(255, 255, 255, .32); box-shadow: 0 18px 50px rgba(81, 73, 63, .06); }
 .featured-copy { padding: 45px 43px; }
 .project-kicker { color: var(--blue-dark); font-size: 10px; font-weight: 800; letter-spacing: .15em; }
-.featured-copy h1 { margin: 7px 0 0; color: var(--ink-strong); font-size: 44px; line-height: 1.1; letter-spacing: -.03em; }
+.featured-copy h2 { margin: 7px 0 0; color: var(--ink-strong); font-size: 44px; line-height: 1.1; letter-spacing: -.03em; }
 .project-subtitle { margin: 9px 0 20px !important; color: var(--ink-strong) !important; font-size: 17px !important; font-weight: 650; }
 .featured-copy > p { max-width: 610px; margin: 0; color: var(--muted); font-family: Georgia, "Noto Serif SC", "Songti SC", serif; font-size: 14px; line-height: 1.8; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 25px; }
@@ -89,7 +90,7 @@ footer p { margin: 0; }
   .brand strong { display: none; }
   .site-header nav { gap: 14px; }
   .featured-copy { padding: 32px 23px; }
-  .featured-copy h1 { font-size: 36px; }
+  .featured-copy h2 { font-size: 36px; }
   .project-subtitle { font-size: 15px !important; }
   .featured-visual { padding: 30px 22px; }
 }
