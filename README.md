@@ -1,5 +1,5 @@
 # Simone Fan · Portfolio
 
-Single-project homepage for ViralDNA.
+Project collection homepage for current and future work. ViralDNA is the first published project.
 
 Live site: [bj0703.github.io](https://bj0703.github.io/)
