@@ -1,233 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bj的 GitHub 主页</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="topbar">
-        <div class="topbar-inner">
-            <a class="brand" href="#">GitHub Home</a>
-            <nav class="nav">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#papers">Papers</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fdfaf4" />
+    <meta
+      name="description"
+      content="Simone Fan 的个人主页：展示 ViralDNA 等项目、产品实验与研究阅读。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:title" content="Simone Fan · Portfolio" />
+    <meta
+      property="og:description"
+      content="Projects, experiments, and research notes by Simone Fan."
+    />
+    <meta property="og:url" content="https://bj0703.github.io/" />
+    <meta property="og:image" content="https://bj0703.github.io/assets/og-portfolio.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Simone Fan · Portfolio" />
+    <meta name="twitter:description" content="Projects, experiments, and research notes by Simone Fan." />
+    <meta name="twitter:image" content="https://bj0703.github.io/assets/og-portfolio.png" />
+    <link rel="canonical" href="https://bj0703.github.io/" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simone Fan · Portfolio</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="返回首页">
+          <span>SF</span>
+          <strong>Simone Fan</strong>
+        </a>
+        <nav aria-label="主导航">
+          <a href="#work">Projects</a>
+          <a href="#approach">Approach</a>
+          <a href="#reading">Reading</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <main class="container">
-        <aside class="card sidebar" id="about">
-            <div class="avatar">ME</div>
-            <h1 class="name">simone</h1>
-            <div class="username">@your-github-id</div>
-            <p class="bio">
-               这里是我的数字自留地，用来放我折腾过的东西、踩过的坑，和一些奇奇怪怪的创意。
+    <main id="main">
+      <section id="top" class="hero page-width">
+        <p class="eyebrow">INDEPENDENT DEVELOPER · PORTFOLIO</p>
+        <h1>把想法做成作品，<br class="desktop-break" />把复杂流程变得简单。</h1>
+        <p class="hero-copy">
+          我是 <strong>Simone Fan</strong>，关注 Agent、视频创作与产品实验。
+          我把模糊的创意和需求，整理成可执行、可验证的项目。
+        </p>
+
+        <nav class="resource-links" aria-label="个人资源">
+          <a href="https://github.com/bj0703">
+            <img class="github-icon" src="https://github.githubassets.com/favicons/favicon.svg" alt="" aria-hidden="true" />
+            GitHub
+          </a>
+          <i aria-hidden="true"></i>
+          <a href="https://bj0703.github.io/ViralDNA/"><span aria-hidden="true">↗</span> ViralDNA</a>
+          <i aria-hidden="true"></i>
+          <a href="mailto:fbj0703@163.com"><span aria-hidden="true">@</span> Email</a>
+        </nav>
+
+        <p class="tagline">Build clearly. Make things useful.</p>
+      </section>
+
+      <section id="work" class="paper-section page-width">
+        <div class="section-heading">
+          <div>
+            <span>SELECTED WORK</span>
+            <h2>Projects</h2>
+          </div>
+          <p>从研究原型到可运行产品，关注真实创作流程中的结构、协作与交付。</p>
+        </div>
+
+        <article class="featured-project">
+          <div class="featured-copy">
+            <span class="project-kicker">01 · FEATURED PROJECT</span>
+            <h3>ViralDNA</h3>
+            <p class="project-subtitle">面向短视频创作的爆款结构迁移与素材补全 AI 平台</p>
+            <p>
+              从优质参考视频中提取脚本、镜头节奏、字幕包装与音乐卡点等“结构基因”，
+              再结合用户素材完成槽位匹配、缺口补全和可解释的剪辑时间线。
             </p>
-            <a class="button" href="https://github.com/" target="_blank" rel="noreferrer">查看 GitHub</a>
-
-            <div class="meta">
-                <div>位置：中国</div>
-                <div>方向：Agent / AI / Tools</div>
-                <div>邮箱：fbj0703@163.com</div>
+            <div class="tag-list" aria-label="项目技术标签">
+              <span>Multi-Agent</span>
+              <span>Video Intelligence</span>
+              <span>Explainable Workflow</span>
+              <span>Python</span>
             </div>
-        </aside>
-
-        <section class="content">
-            <div class="card hero">
-                <h2>正在努力让代码比我更靠谱。</h2>
-                <p>
-                    从入门到放弃再到重新入门的全过程记录，笔记、心得、坑点全在这，希望能帮到和我一样在摸索的人。
-                </p>
+            <div class="project-actions">
+              <a class="primary-link" href="https://bj0703.github.io/ViralDNA/">View Project <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/bj0703/ViralDNA">Source Code <span aria-hidden="true">↗</span></a>
             </div>
+          </div>
+          <div class="featured-visual" aria-label="ViralDNA 工作流概览">
+            <div class="visual-title">STRUCTURE TRANSFER PIPELINE</div>
+            <ol>
+              <li><span>01</span><strong>Analyze</strong><small>解析参考结构</small></li>
+              <li><span>02</span><strong>Match</strong><small>匹配素材槽位</small></li>
+              <li><span>03</span><strong>Complete</strong><small>补全内容缺口</small></li>
+              <li><span>04</span><strong>Render</strong><small>输出视频方案</small></li>
+            </ol>
+            <p>TRANSFER THE METHOD<br />NOT THE ORIGINAL WORK</p>
+          </div>
+        </article>
 
-            <div class="card section" id="projects">
-                <div class="section-header">
-                    <h2>精选项目</h2>
-                    <span class="badge">Pinned</span>
-                </div>
-                <div class="repo-grid">
-                    <article class="repo">
-                        <h3><a href="https://github.com/bj0703/emotion-space" target="_blank" rel="noreferrer">emotion-space</a></h3>
-                        <p>一个围绕图文情感对齐构建的实验项目，用于训练连续情感空间表示。</p>
-                        <div class="repo-footer">Python · PyTorch</div>
-                    </article>
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="project-kicker">02 · RESEARCH TOOL</span>
+            <h3><a href="https://github.com/bj0703/news">News Research</a></h3>
+            <p>围绕新闻选题、信息收集与研究整理构建的工作流工具。</p>
+            <div class="project-meta"><span>Research</span><span>Workflow</span></div>
+          </article>
+          <article class="project-card">
+            <span class="project-kicker">03 · WEB EXPERIMENT</span>
+            <h3><a href="https://github.com/bj0703/baiduren-demo">Baiduren Demo</a></h3>
+            <p>面向网页交互与产品验证的 JavaScript 实验项目。</p>
+            <div class="project-meta"><span>JavaScript</span><span>Prototype</span></div>
+          </article>
+          <article class="project-card">
+            <span class="project-kicker">04 · ARCHIVE</span>
+            <h3><a href="https://github.com/bj0703/Myblog">Myblog</a></h3>
+            <p>早期开发记录、学习笔记与网页实践的长期归档。</p>
+            <div class="project-meta"><span>Writing</span><span>Web</span></div>
+          </article>
+        </div>
+      </section>
 
-                    <article class="repo">
-                        <h3><a href="https://github.com/bj0703/personal-site" target="_blank" rel="noreferrer">personal-site</a></h3>
-                        <p>一个部署在 GitHub Pages 上的个人主页模板，适合放简介、作品和演示视频。</p>
-                        <div class="repo-footer">HTML · CSS</div>
-                    </article>
+      <section id="approach" class="paper-section page-width">
+        <div class="section-heading centered">
+          <div>
+            <span>HOW I BUILD</span>
+            <h2>Approach</h2>
+          </div>
+          <p>把复杂问题拆成可理解、可执行、可验证的产品闭环。</p>
+        </div>
 
-                    <article class="repo">
-                        <h3><a href="https://github.com/bj0703/toolbox" target="_blank" rel="noreferrer">toolbox</a></h3>
-                        <p>整理常用脚本、自动化工具和开发配置，方便快速复用。</p>
-                        <div class="repo-footer">JavaScript · Shell</div>
-                    </article>
+        <div class="approach-grid">
+          <article>
+            <span>01</span>
+            <h3>Understand</h3>
+            <p>先识别真正的目标、约束与成功标准，而不是直接堆叠功能。</p>
+          </article>
+          <div class="approach-arrow" aria-hidden="true">→</div>
+          <article>
+            <span>02</span>
+            <h3>Orchestrate</h3>
+            <p>用结构化状态、受控工具与清晰边界组织 Agent 协作。</p>
+          </article>
+          <div class="approach-arrow" aria-hidden="true">→</div>
+          <article>
+            <span>03</span>
+            <h3>Deliver</h3>
+            <p>通过可检查的中间结果与真实输出，让系统稳定落地。</p>
+          </article>
+        </div>
+      </section>
 
-                    <article class="repo">
-                        <h3><a href="https://github.com/bj0703/notes" target="_blank" rel="noreferrer">notes</a></h3>
-                        <p>记录学习过程中的技术笔记、实验结论和项目总结。</p>
-                        <div class="repo-footer">Markdown</div>
-                    </article>
-                </div>
-            </div>
+      <section id="reading" class="paper-section page-width">
+        <div class="section-heading">
+          <div>
+            <span>RESEARCH NOTES</span>
+            <h2>Reading</h2>
+          </div>
+          <p>持续关注基础模型、视觉生成、智能体与训练方法。</p>
+        </div>
 
-            <div class="card papers-section" id="papers">
-                <div class="papers-header">
-                    <h2>阅读过的论文</h2>
-                    <span class="badge">Papers</span>
-                </div>
+        <div class="reading-list">
+          <a href="https://arxiv.org/abs/1706.03762">
+            <span class="reading-year">2017</span>
+            <div><strong>Attention Is All You Need</strong><small>Transformer · Self-Attention · NLP</small></div>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://arxiv.org/abs/2010.11929">
+            <span class="reading-year">2020</span>
+            <div><strong>An Image is Worth 16×16 Words</strong><small>Vision Transformer · Representation Learning</small></div>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://arxiv.org/abs/2112.10752">
+            <span class="reading-year">2022</span>
+            <div><strong>High-Resolution Image Synthesis with Latent Diffusion Models</strong><small>Diffusion · Generative AI · Vision</small></div>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://arxiv.org/abs/2303.11366">
+            <span class="reading-year">2023</span>
+            <div><strong>Reflexion: Language Agents with Verbal Reinforcement Learning</strong><small>AI Agent · Reflection · Reasoning</small></div>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
 
-                <div class="papers-category-tabs">
-                    <button class="papers-tab active" data-category="all">全部</button>
-                    <button class="papers-tab" data-category="llm">大语言模型</button>
-                    <button class="papers-tab" data-category="vision">计算机视觉</button>
-                    <button class="papers-tab" data-category="agent">智能体</button>
-                    <button class="papers-tab" data-category="optimization">优化方法</button>
-                </div>
-
-                <div class="papers-list">
-                    <article class="paper-card" data-category="llm">
-                        <h3 class="paper-title"><a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noreferrer">Attention Is All You Need</a></h3>
-                        <div class="paper-meta">
-                            <span>Authors: Vaswani et al.</span>
-                            <span>Year: 2017</span>
-                            <span>Venue: NeurIPS</span>
-                        </div>
-                        <p class="paper-summary">
-                            提出了Transformer架构，完全基于自注意力机制，摒弃了传统的RNN和CNN。这篇论文开创了NLP领域的新纪元，
-                            BERT、GPT等后续模型都基于此架构。核心创新点包括多头注意力、位置编码和残差连接。
-                        </p>
-                        <div class="paper-tags">
-                            <span class="paper-tag">Transformer</span>
-                            <span class="paper-tag">Self-Attention</span>
-                            <span class="paper-tag">NLP</span>
-                        </div>
-                    </article>
-
-                    <article class="paper-card" data-category="vision">
-                        <h3 class="paper-title"><a href="https://arxiv.org/abs/2010.11929" target="_blank" rel="noreferrer">Vision Transformer (ViT)</a></h3>
-                        <div class="paper-meta">
-                            <span>Authors: Dosovitskiy et al.</span>
-                            <span>Year: 2020</span>
-                            <span>Venue: ICML</span>
-                        </div>
-                        <p class="paper-summary">
-                            将Transformer直接应用于图像分类任务，通过将图像分割成固定大小的patch序列输入Transformer。
-                            证明了在大规模数据集上预训练后，ViT可以达到甚至超过传统CNN的性能，开启了视觉Transformer时代。
-                        </p>
-                        <div class="paper-tags">
-                            <span class="paper-tag">Vision Transformer</span>
-                            <span class="paper-tag">Image Classification</span>
-                            <span class="paper-tag">CV</span>
-                        </div>
-                    </article>
-
-                    <article class="paper-card" data-category="agent">
-                        <h3 class="paper-title"><a href="https://github.com/Significant-Gravitas/AutoGPT" target="_blank" rel="noreferrer">AutoGPT</a></h3>
-                        <div class="paper-meta">
-                            <span>Authors: Significant Gravitas</span>
-                            <span>Year: 2023</span>
-                            <span>Venue: arXiv</span>
-                        </div>
-                        <p class="paper-summary">
-                            提出了一种基于GPT-4的自主智能体框架，能够自动分解任务、生成计划、执行操作并反思结果。
-                            AutoGPT展示了LLM在无需人工干预的情况下完成复杂任务的能力，推动了AI Agent研究的发展。
-                        </p>
-                        <div class="paper-tags">
-                            <span class="paper-tag">AI Agent</span>
-                            <span class="paper-tag">Autonomous</span>
-                            <span class="paper-tag">GPT-4</span>
-                        </div>
-                    </article>
-
-                    <article class="paper-card" data-category="optimization">
-                        <h3 class="paper-title"><a href="https://arxiv.org/abs/1412.6980" target="_blank" rel="noreferrer">Adam: A Method for Stochastic Optimization</a></h3>
-                        <div class="paper-meta">
-                            <span>Authors: Kingma & Ba</span>
-                            <span>Year: 2015</span>
-                            <span>Venue: ICLR</span>
-                        </div>
-                        <p class="paper-summary">
-                            提出了Adam优化器，结合了AdaGrad和RMSProp的优点，使用自适应学习率。Adam已成为深度学习中最常用的
-                            优化算法之一，收敛速度快且对超参数不敏感，广泛应用于各种深度学习模型的训练。
-                        </p>
-                        <div class="paper-tags">
-                            <span class="paper-tag">Optimization</span>
-                            <span class="paper-tag">Deep Learning</span>
-                            <span class="paper-tag">Training</span>
-                        </div>
-                    </article>
-
-                    <article class="paper-card" data-category="llm">
-                        <h3 class="paper-title"><a href="https://arxiv.org/abs/1810.04805" target="_blank" rel="noreferrer">BERT: Pre-training of Deep Bidirectional Transformers</a></h3>
-                        <div class="paper-meta">
-                            <span>Authors: Devlin et al.</span>
-                            <span>Year: 2018</span>
-                            <span>Venue: NAACL</span>
-                        </div>
-                        <p class="paper-summary">
-                            提出了BERT模型，采用双向Transformer编码器和Masked Language Modeling预训练任务。BERT在11个NLP任务
-                            上取得了state-of-the-art性能，证明了预训练语言模型的强大能力，推动了NLP领域的预训练范式革命。
-                        </p>
-                        <div class="paper-tags">
-                            <span class="paper-tag">BERT</span>
-                            <span class="paper-tag">Pre-training</span>
-                            <span class="paper-tag">NLP</span>
-                        </div>
-                    </article>
-
-                    <article class="paper-card" data-category="vision">
-                        <h3 class="paper-title"><a href="https://arxiv.org/abs/2112.10752" target="_blank" rel="noreferrer">Stable Diffusion</a></h3>
-                        <div class="paper-meta">
-                            <span>Authors: Rombach et al.</span>
-                            <span>Year: 2022</span>
-                            <span>Venue: CVPR</span>
-                        </div>
-                        <p class="paper-summary">
-                            提出了一种高效的文本到图像生成模型，使用潜在扩散模型在压缩的潜在空间中进行扩散过程。
-                            Stable Diffusion相比之前的模型更高效，能够在消费级GPU上运行，极大推动了AI图像生成的普及。
-                        </p>
-                        <div class="paper-tags">
-                            <span class="paper-tag">Diffusion Model</span>
-                            <span class="paper-tag">Text-to-Image</span>
-                            <span class="paper-tag">Generative AI</span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            </section>
+      <section id="contact" class="contact-section page-width">
+        <span>LET'S CONNECT</span>
+        <h2>有新的项目想法或产品实验？</h2>
+        <p>欢迎交流项目想法、产品实验与开放协作。</p>
+        <div class="contact-links">
+          <a class="primary-link" href="mailto:fbj0703@163.com">Send an Email <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/bj0703">GitHub Profile <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
     </main>
 
-    <footer id="contact">
-        © 2026 你的名字 · Built for GitHub Pages
+    <footer class="page-width">
+      <hr />
+      <p>Simone Fan · Independent Developer · 2026</p>
+      <p><a href="https://github.com/bj0703/bj0703.github.io">Website Repository</a></p>
     </footer>
-
-    <script>
-        const tabs = document.querySelectorAll('.papers-tab');
-        const papers = document.querySelectorAll('.paper-card');
-
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const category = tab.dataset.category;
-
-                tabs.forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-
-                papers.forEach(paper => {
-                    if (category === 'all' || paper.dataset.category === category) {
-                        paper.classList.remove('hidden');
-                    } else {
-                        paper.classList.add('hidden');
-                    }
-                });
-            });
-        });
-    </script>
-</body>
+  </body>
 </html>
