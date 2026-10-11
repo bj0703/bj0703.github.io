@@ -26,20 +26,25 @@ if (dialog && typeof dialog.showModal === 'function') {
   });
 }
 
-if ('IntersectionObserver' in window) {
-  const navLinks = [...document.querySelectorAll('nav a[href^="#"]')];
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      navLinks.forEach((link) => {
-        if (link.hash === `#${entry.target.id}`) link.setAttribute('aria-current', 'location');
-        else link.removeAttribute('aria-current');
-      });
-    });
-  }, { rootMargin: '-15% 0px -65% 0px', threshold: 0 });
-  document.querySelectorAll('#projects, #timeline, #about').forEach((section) => observer.observe(section));
-  const heroObserver = new IntersectionObserver((entries) => {
-    if (entries.some((entry) => entry.isIntersecting)) navLinks.forEach((link) => link.removeAttribute('aria-current'));
+const navLinks = [...document.querySelectorAll('nav a[href^="#"]')];
+const sections = [...document.querySelectorAll('#projects, #timeline, #about')];
+let navigationUpdatePending = false;
+
+function updateNavigation() {
+  const activeSection = sections.filter((section) => section.getBoundingClientRect().top <= window.innerHeight * 0.35).pop();
+  navLinks.forEach((link) => {
+    if (activeSection && link.hash === `#${activeSection.id}`) link.setAttribute('aria-current', 'location');
+    else link.removeAttribute('aria-current');
   });
-  heroObserver.observe(document.querySelector('.hero'));
+  navigationUpdatePending = false;
 }
+
+function scheduleNavigationUpdate() {
+  if (navigationUpdatePending) return;
+  navigationUpdatePending = true;
+  window.requestAnimationFrame(updateNavigation);
+}
+
+window.addEventListener('scroll', scheduleNavigationUpdate, { passive: true });
+window.addEventListener('resize', scheduleNavigationUpdate);
+updateNavigation();
