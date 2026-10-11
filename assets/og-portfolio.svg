@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#fdfaf4"/>
+  <g fill="#2f3535" font-family="Georgia,serif">
+    <text x="70" y="76" font-size="30" font-weight="bold" letter-spacing="-2">SF</text>
+    <text x="70" y="279" font-size="96" letter-spacing="-4">Simone Fan<tspan fill="#267fab">.</tspan></text>
+  </g>
+  <circle cx="110" cy="75" r="3" fill="#267fab"/>
+  <text x="70" y="158" fill="#267fab" font-family="Arial,sans-serif" font-size="13" letter-spacing="3">AI APPLICATIONS · FULL-STACK · PRODUCT</text>
+  <text x="70" y="353" fill="#2f3535" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="34">把想法，做成可用的作品。</text>
+  <text x="70" y="408" fill="#686e6c" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="18">AI 创作 · 智能研究 · 公益消费协作</text>
+  <path d="M70 478H1130" stroke="#deddd4"/>
+  <g font-family="Arial,PingFang SC,sans-serif" font-size="16" fill="#2f3535">
+    <text x="70" y="533">ViralDNA</text><text x="426" y="533">摆渡人 baiduren</text><text x="800" y="533">NewsLens</text>
+  </g>
+  <g font-family="PingFang SC,Arial,sans-serif" font-size="13" fill="#686e6c">
+    <text x="70" y="564">剪映创作赛道 · 直通 Offer</text><text x="426" y="564">产品大赛 · Top 2000 / 3 万件作品</text><text x="800" y="564">多智能体新闻选题调研助手</text>
+  </g>
+  <g fill="none" stroke="#d7dedb"><circle cx="999" cy="292" r="106"/><circle cx="999" cy="292" r="65" stroke-dasharray="3 5"/><path d="M893 292H1105M999 186V398" stroke-dasharray="2 5"/><path d="M893 292A106 106 0 0 1 999 186" stroke="#267fab" stroke-width="2"/></g>
+  <g font-family="Georgia,serif" text-anchor="middle" font-size="35"><text x="999" y="286" fill="#2f3535">make</text><text x="999" y="321" fill="#267fab" font-style="italic">it real.</text></g>
+  <path d="M1084 207V229M1073 218H1095M1076 210L1092 226M1076 226L1092 210" stroke="#b95a36"/>
+  <text x="1130" y="76" text-anchor="end" fill="#686e6c" font-family="Arial,sans-serif" font-size="13">bj0703.github.io</text>
+</svg>

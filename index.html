@@ -4,112 +4,153 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#fdfaf4" />
-    <meta
-      name="description"
-      content="Simone Fan 的项目收录主页，用于展示正在开发和持续迭代的公开项目。"
-    />
+    <meta name="description" content="Simone Fan 的个人主页：AI 应用、全栈开发与产品探索。作品包括 ViralDNA、摆渡人 baiduren 与 NewsLens 新闻选题调研助手。" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="zh_CN" />
-    <meta property="og:title" content="项目收录 · Simone Fan" />
-    <meta
-      property="og:description"
-      content="Projects and experiments by Simone Fan."
-    />
+    <meta property="og:title" content="Simone Fan · 个人主页" />
+    <meta property="og:description" content="把想法做成可用的作品。探索 AI 创作、智能研究与公益消费协作。" />
     <meta property="og:url" content="https://bj0703.github.io/" />
     <meta property="og:image" content="https://bj0703.github.io/assets/og-portfolio.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Simone Fan 的个人主页与 ViralDNA、摆渡人、NewsLens 三项作品" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="项目收录 · Simone Fan" />
-    <meta name="twitter:description" content="Projects and experiments by Simone Fan." />
+    <meta name="twitter:title" content="Simone Fan · 个人主页" />
+    <meta name="twitter:description" content="AI 应用、全栈开发与产品探索。" />
     <meta name="twitter:image" content="https://bj0703.github.io/assets/og-portfolio.png" />
     <link rel="canonical" href="https://bj0703.github.io/" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link rel="stylesheet" href="style.css" />
-    <title>项目收录</title>
+    <script src="script.js" defer></script>
+    <title>Simone Fan · 个人主页</title>
   </head>
   <body>
     <a class="skip-link" href="#main">跳到主要内容</a>
-
     <header class="site-header">
       <div class="nav-shell">
-        <a class="brand" href="#main" aria-label="返回项目">
-          <span>SF</span>
-          <strong>Simone Fan</strong>
-        </a>
-        <nav aria-label="个人资源">
-          <a href="https://github.com/bj0703">GitHub</a>
+        <a class="brand" href="#main" aria-label="Simone Fan，返回首页"><span class="brand-mark">SF<span class="brand-dot"></span></span><strong>Simone Fan</strong></a>
+        <nav aria-label="主导航">
+          <a href="#projects">作品</a>
+          <a href="#timeline">事件线</a>
+          <a href="#about">关于我</a>
+          <a class="nav-github" href="https://github.com/bj0703">GitHub <span aria-hidden="true">↗</span></a>
         </nav>
       </div>
     </header>
 
-    <main id="main" class="page-width collection-main">
-      <h1 class="collection-title">项目收录</h1>
-      <article class="featured-project">
-        <div class="featured-copy">
-          <span class="project-kicker">PROJECT 01</span>
-          <h2>ViralDNA</h2>
-          <p class="project-subtitle">面向短视频创作的爆款结构迁移与素材补全 AI 平台</p>
-          <p>
-            从优质参考视频中提取脚本、镜头节奏、字幕包装与音乐卡点等“结构基因”，
-            再结合用户素材完成槽位匹配、缺口补全和可解释的剪辑时间线。
-          </p>
-          <div class="tag-list" aria-label="项目技术标签">
-            <span>Multi-Agent</span>
-            <span>Video Intelligence</span>
-            <span>Explainable Workflow</span>
-            <span>Python</span>
-          </div>
-          <div class="project-actions">
-            <a class="primary-link" href="https://bj0703.github.io/ViralDNA/">View Project <span aria-hidden="true">↗</span></a>
-            <a href="https://github.com/bj0703/ViralDNA">Source Code <span aria-hidden="true">↗</span></a>
+    <main id="main">
+      <section class="hero page-width" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="small-dot"></span> AI APPLICATIONS · FULL-STACK · PRODUCT</p>
+          <p class="hello">你好，我是</p>
+          <h1 id="hero-title">Simone Fan<span class="name-period">.</span></h1>
+          <p class="hero-statement">把想法，做成可用的作品。</p>
+          <p class="hero-description">关注 AI 与真实场景的交汇。从短视频创作、新闻选题研究，到公益消费协作，用产品思考定义问题，用全栈开发把它落地。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">探索我的作品 <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="https://github.com/bj0703">在 GitHub 找到我 <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <div class="featured-visual" aria-label="ViralDNA 工作流概览">
-          <div class="visual-title">STRUCTURE TRANSFER PIPELINE</div>
-          <ol>
-            <li><span>01</span><strong>Analyze</strong><small>解析参考结构</small></li>
-            <li><span>02</span><strong>Match</strong><small>匹配素材槽位</small></li>
-            <li><span>03</span><strong>Complete</strong><small>补全内容缺口</small></li>
-            <li><span>04</span><strong>Render</strong><small>输出视频方案</small></li>
-          </ol>
-          <p>TRANSFER THE METHOD<br />NOT THE ORIGINAL WORK</p>
+        <div class="hero-visual" aria-label="我的创作路径：想法、产品、代码、作品">
+          <div class="visual-meta"><span>FROM IDEA TO IMPACT</span><span>01—04</span></div>
+          <div class="orbit" aria-hidden="true">
+            <svg viewBox="0 0 320 310"><circle cx="160" cy="155" r="106" /><circle cx="160" cy="155" r="62" /><path d="M54 155H266M160 49V261" /><path class="orbit-path" d="M54 155A106 106 0 0 1 160 49" /></svg>
+            <span class="orbit-core">make<br /><em>it real.</em></span>
+            <span class="orbit-node node-top"><small>01</small>想法</span>
+            <span class="orbit-node node-right"><small>02</small>产品</span>
+            <span class="orbit-node node-bottom"><small>03</small>代码</span>
+            <span class="orbit-node node-left"><small>04</small>作品</span>
+            <span class="orbit-spark">✳</span>
+          </div>
+          <p class="visual-caption">好奇心驱动，<br />在真实问题里持续探索。</p>
         </div>
-      </article>
+      </section>
 
-      <article class="featured-project">
-        <div class="featured-copy">
-          <span class="project-kicker">PROJECT 02</span>
-          <h2>NewsLens</h2>
-          <p class="project-subtitle">面向内容创作者的多智能体新闻选题调研助手</p>
-          <p>
-            将热点采集、研究规划、多源检索、证据追踪、知识图谱与报告生成组织为
-            一套可规划、可验证、可追溯的智能研究流程，帮助创作者更快完成前期资料研判。
-          </p>
-          <div class="tag-list" aria-label="项目技术标签">
-            <span>Multi-Agent</span>
-            <span>Deep Research</span>
-            <span>Hybrid RAG</span>
-            <span>LangGraph</span>
-          </div>
-          <div class="project-actions">
-            <a class="primary-link" href="https://bj0703.github.io/news/">View Project <span aria-hidden="true">↗</span></a>
-            <a href="https://github.com/bj0703/news_assistant">Source Code <span aria-hidden="true">↗</span></a>
-          </div>
+      <div class="highlights page-width" aria-label="作品与成果概览">
+        <div class="highlight highlight-count"><strong>03<span> / WORKS</span></strong><p>三个场景，三种产品探索</p></div>
+        <div class="highlight"><span class="highlight-label">VIRALDNA</span><strong>直通 <span class="serif-word">Offer</span> <span class="award-star" aria-hidden="true">✳</span></strong><p>字节全栈挑战赛 · 剪映创作赛道</p></div>
+        <div class="highlight"><span class="highlight-label">BAIDUREN</span><strong><span class="serif-word">Top</span> 2000</strong><p>产品大赛 · 总提交作品 3 万</p></div>
+      </div>
+
+      <section id="projects" class="work-section page-width" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div><p class="eyebrow section-index">01 / SELECTED WORK</p><h2 id="projects-title">作品，是最好的自我介绍。</h2></div>
+          <p>从问题出发，<br />走到可体验的产品。</p>
         </div>
-        <div class="featured-visual" aria-label="NewsLens 研究工作流概览">
-          <div class="visual-title">AGENTIC RESEARCH PIPELINE</div>
-          <ol>
-            <li><span>01</span><strong>Discover</strong><small>发现热点选题</small></li>
-            <li><span>02</span><strong>Search</strong><small>检索多源资料</small></li>
-            <li><span>03</span><strong>Verify</strong><small>追踪证据关系</small></li>
-            <li><span>04</span><strong>Report</strong><small>生成研判报告</small></li>
+
+        <article id="viraldna" class="project project-viral" aria-labelledby="viraldna-title">
+          <div class="project-copy">
+            <p class="project-category"><span>01</span> AI 创作 / 视频智能</p>
+            <h3 id="viraldna-title">ViralDNA<span class="project-title-mark" aria-hidden="true">↗</span></h3>
+            <p class="project-subtitle">让视频创作的方法，可以迁移。</p>
+            <p class="project-description">拆解参考视频的脚本、镜头节奏、字幕与音乐卡点，将这些“结构基因”迁移到新素材。多 Agent 协作完成素材匹配、缺口补全与剪辑时间线，输出可解释、可调整的视频方案。</p>
+            <div class="result-note"><span class="result-icon" aria-hidden="true">✳</span><div><strong>字节全栈挑战赛 · 剪映创作赛道</strong><span>赛事结果：直通 Offer</span></div></div>
+            <ul class="tags" aria-label="ViralDNA 技术栈"><li>Multi-Agent</li><li>React</li><li>FastAPI</li><li>FFmpeg</li></ul>
+            <div class="project-actions"><a class="text-link strong-link" href="https://bj0703.github.io/ViralDNA/">查看项目 <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/bj0703/ViralDNA">源代码 <span aria-hidden="true">↗</span></a></div>
+          </div>
+          <figure class="project-figure">
+            <div class="preview-topbar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>ViralDNA / Creative workbench</span><span>01</span></div>
+            <a class="image-preview" href="assets/projects/viraldna.webp" data-preview data-caption="ViralDNA · 参考视频结构分析与 Agent 执行工作台" aria-label="放大查看 ViralDNA 工作台截图"><img src="assets/projects/viraldna.webp" width="1600" height="800" alt="ViralDNA 工作台：参考视频的结构槽位、音乐卡点、镜头切分与 Agent 执行过程" loading="lazy" /><span class="preview-hint">查看实景 <span aria-hidden="true">↗</span></span></a>
+            <figcaption><span>参考结构 → 素材匹配 → 缺口补全 → 成片</span><span>真实项目截图</span></figcaption>
+          </figure>
+        </article>
+
+        <article id="baiduren" class="project project-baidu" aria-labelledby="baiduren-title">
+          <div class="project-copy">
+            <p class="project-category"><span>02</span> 产品设计 / 公益协作</p>
+            <h3 id="baiduren-title">摆渡人 <span class="project-alias">baiduren</span></h3>
+            <p class="project-subtitle">让善意，成为可持续的连接。</p>
+            <p class="project-description">连接被救助人、品牌商家与普通消费者。围绕合作型求助、品牌匹配、公益联名商品与可信反馈，设计三方协作的产品流程，让每一份支持都有清楚的规则与可追溯的依据。</p>
+            <div class="result-note"><span class="result-icon" aria-hidden="true">✳</span><div><strong>创造力大赛（产品大赛）</strong><span>赛事结果：Top 2000 · 总提交作品 3 万</span></div></div>
+            <ul class="tags" aria-label="摆渡人项目标签"><li>产品设计</li><li>三方协作</li><li>AI 辅助</li><li>交互原型</li></ul>
+            <div class="project-actions"><a class="text-link strong-link" href="https://bj0703.github.io/baiduren-demo/">体验原型 <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/bj0703/baiduren-demo">项目仓库 <span aria-hidden="true">↗</span></a></div>
+            <p class="demo-note">前端交互 Demo，业务数据与 AI 处理均为本地模拟。</p>
+          </div>
+          <figure class="project-figure">
+            <div class="preview-topbar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>baiduren / Cooperation prototype</span><span>02</span></div>
+            <a class="image-preview" href="assets/projects/baiduren.webp" data-preview data-caption="摆渡人 · 品牌发现求助与合作匹配交互原型" aria-label="放大查看摆渡人原型截图"><img src="assets/projects/baiduren.webp" width="1440" height="1054" alt="摆渡人品牌工作台：发现合作型求助，查看匹配理由与合作需求" loading="lazy" /><span class="preview-hint">查看实景 <span aria-hidden="true">↗</span></span></a>
+            <figcaption><span>合作型求助 → 品牌回应 → 公益消费 → 反馈</span><span>交互原型截图</span></figcaption>
+          </figure>
+        </article>
+
+        <article id="newslens" class="project project-news" aria-labelledby="newslens-title">
+          <div class="project-copy">
+            <p class="project-category"><span>03</span> 智能研究 / 新闻选题</p>
+            <h3 id="newslens-title">NewsLens<span class="project-title-mark" aria-hidden="true">↗</span></h3>
+            <p class="project-subtitle">从一个选题，走向有依据的洞察。</p>
+            <p class="project-description">面向内容创作者的新闻选题调研助手。将热点发现、研究规划、多源检索、证据追踪、知识图谱与报告生成串成一条研究链，让分散的信息变成可验证、可追溯的调研结果。</p>
+            <div class="research-note"><span aria-hidden="true">⌁</span><p>网络搜索 + 个人知识库<br /><strong>规划 → 检索 → 分析 → 报告 → 审校</strong></p></div>
+            <ul class="tags" aria-label="NewsLens 技术栈"><li>LangGraph</li><li>Hybrid RAG</li><li>Milvus</li><li>React</li></ul>
+            <div class="project-actions"><a class="text-link strong-link" href="https://bj0703.github.io/news/">查看项目 <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/bj0703/news_assistant">源代码 <span aria-hidden="true">↗</span></a></div>
+          </div>
+          <figure class="project-figure">
+            <div class="preview-topbar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>NewsLens / Research workspace</span><span>03</span></div>
+            <a class="image-preview" href="assets/projects/newslens.webp" data-preview data-caption="NewsLens · 新闻选题研究过程与知识图谱" aria-label="放大查看 NewsLens 工作台截图"><img src="assets/projects/newslens.webp" width="1600" height="787" alt="NewsLens 新闻选题工作台：左侧可追踪研究过程，右侧展示事件与机构的知识图谱" loading="lazy" /><span class="preview-hint">查看实景 <span aria-hidden="true">↗</span></span></a>
+            <figcaption><span>一个议题 → 多源证据 → 关系图谱 → 报告</span><span>真实项目截图</span></figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <section id="timeline" class="timeline-section" aria-labelledby="timeline-title">
+        <div class="page-width">
+          <div class="section-heading"><div><p class="eyebrow section-index">02 / THE JOURNEY</p><h2 id="timeline-title">每一步，都留下一个作品。</h2></div><p>项目事件线<br /><span class="timeline-year">2026</span></p></div>
+          <ol class="timeline">
+            <li><div class="timeline-date"><time datetime="2026-04-21">2026.04</time><span>01</span></div><span class="timeline-dot" aria-hidden="true"></span><p class="timeline-type">研究工具 · 仓库创建</p><h3>NewsLens</h3><p>新闻选题调研助手开始积累，将选题规划、信息检索与研究报告连接起来。</p><a href="https://github.com/bj0703/news_assistant">查看记录 <span aria-hidden="true">↗</span></a></li>
+            <li><div class="timeline-date"><time datetime="2026-06-10">2026.06</time><span>02</span></div><span class="timeline-dot" aria-hidden="true"></span><p class="timeline-type">创作工具 · 仓库公开</p><h3>ViralDNA</h3><p>公开短视频结构迁移项目，探索从参考分析到素材补全与视频渲染的创作闭环。</p><a href="#viraldna">认识这件作品 <span aria-hidden="true">↗</span></a></li>
+            <li><div class="timeline-date"><time datetime="2026-07-14">2026.07</time><span>03</span></div><span class="timeline-dot" aria-hidden="true"></span><p class="timeline-type">公益协作 · 原型公开</p><h3>摆渡人</h3><p>公开三方协作的交互原型，用产品流程连接合作型求助、品牌与公益消费。</p><a href="#baiduren">认识这件作品 <span aria-hidden="true">↗</span></a></li>
+            <li><div class="timeline-date"><time datetime="2026-08">2026.08</time><span>04</span></div><span class="timeline-dot" aria-hidden="true"></span><p class="timeline-type">作品表达 · 展示站上线</p><h3>让作品被看见</h3><p>完善 ViralDNA 与 NewsLens 项目展示站，把产品思路、技术路径和界面实景整理出来。</p><a href="#projects">浏览作品 <span aria-hidden="true">↑</span></a></li>
           </ol>
-          <p>FROM SCATTERED INFORMATION<br />TO STRUCTURED INSIGHT</p>
+          <p class="timeline-footnote">时间来自公开仓库的创建与发布记录；赛事成绩在对应作品中展示。</p>
         </div>
-      </article>
+      </section>
+
+      <section id="about" class="about-section page-width" aria-labelledby="about-title">
+        <div class="about-intro"><p class="eyebrow section-index">03 / A LITTLE ABOUT ME</p><h2 id="about-title">从好奇出发，<br />把事情做完整。</h2><a class="text-link strong-link" href="https://github.com/bj0703">GitHub @bj0703 <span aria-hidden="true">↗</span></a></div>
+        <div class="about-copy"><p class="about-lead">我关心技术如何进入真实的工作与生活。</p><p>这三个作品，是我对这个问题的不同回答：让创作者更好地表达，让研究者更清楚地判断，让人与人的支持更透明地发生。</p><p>从需求拆解、交互设计，到前后端实现与 Agent 工作流，我希望把想法推进到一个可以被体验、被检查、继续被改进的状态。</p><div class="about-signature"><span>Think clearly. Build thoughtfully.</span><span aria-hidden="true">SF.</span></div></div>
+      </section>
     </main>
 
-    <footer class="page-width">
-      <hr />
-      <p>项目收录 · Simone Fan · 2026</p>
-    </footer>
+    <footer class="site-footer page-width"><p>© 2026 Simone Fan</p><p>想法在生长，作品在继续。</p><a href="#main">回到顶部 <span aria-hidden="true">↑</span></a></footer>
+    <dialog class="preview-dialog" aria-labelledby="preview-caption"><div class="dialog-toolbar"><p id="preview-caption"></p><button class="dialog-close" type="button" aria-label="关闭截图预览">关闭 <span aria-hidden="true">×</span></button></div><img class="dialog-image" alt="" /></dialog>
   </body>
 </html>
